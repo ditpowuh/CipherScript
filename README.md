@@ -19,3 +19,5 @@ CipherScript.debug
 CipherScript.temporary
 CipherScript.fixmode
 CipherScript.testmode
+
+#### I do not recommend editing 'setup.js' unless you know what you are doing!
