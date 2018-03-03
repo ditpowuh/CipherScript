@@ -21,9 +21,10 @@ if (CipherScript.on == true && CipherScript.off == false) {
   CipherScript.debug = false;
   CipherScript.temporary = false;
   CipherScript.fixmode = false;
+  CipherScript.testmode = false;
 
   CipherScript.message = function (text) {
-    alert(text)
+    return (text);
     console.log(text);
   };
   CipherScript.post = function (text) {
@@ -38,26 +39,40 @@ if (CipherScript.on == true && CipherScript.off == false) {
     }
   };
   CipherScript.warn = function (text) {
-    alert("WARNING!")
-    var warntext = confirm(text)
+    console.log("Warned.")
+    alert("WARNING!");
+    var warntext = confirm(text);
   };
   CipherScript.error = function (errorcode) {
     console.log("ERROR DETECTED.")
     if (errorcode == 0) {
-      alert("An error was detected. Unknown cause.")
-      console.log("Error Code: 0;")
-      console.log("Unknown Cause.")
+      return "An error was detected. Unknown cause.";
+      console.log("Error Code: 0;");
+      console.log("Unknown Cause.");
     }
     if (errorcode == 1) {
-      alert("An error was detected. Cause: Setup Unsuccessful.")
-      console.log("Error Code: 1;")
-      console.log("Setup Unsuccessful.")
+      return "An error was detected. Cause: Setup Unsuccessful.";
+      console.log("Error Code: 1;");
+      console.log("Setup Unsuccessful.");
     }
     if (errorcode == 2) {
-      alert("An error was detected. Cause: Empty or Space at front.")
-      console.log("Error Code: 2;")
-      console.log("Empty or Space at the front.")
+      return "An error was detected. Cause: Empty or Space at front.";
+      console.log("Error Code: 2;");
+      console.log("Empty or Space at the front.");
     }
+  };
+  CipherScript.booleancheck = function (check) {
+    if (check) {
+      return true;
+      console.log("CipherScript.booleancheck: true")
+    }
+    else {
+      return false;
+      console.log("CipherScript.booleancheck: false")
+    }
+  };
+  CipherScript.popup = function (text) {
+    alert(text)
   };
 
 }
