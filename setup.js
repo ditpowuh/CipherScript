@@ -18,10 +18,12 @@ else {
 
 if (CipherScript.on == true && CipherScript.off == false) {
 
+  CipherScript.htmlroles = false;
   CipherScript.debug = false;
   CipherScript.temporary = false;
   CipherScript.fixmode = false;
   CipherScript.testmode = false;
+  CipherScript.safemode = false;
 
   CipherScript.message = function (text) {
     return (text);
@@ -33,7 +35,7 @@ if (CipherScript.on == true && CipherScript.off == false) {
   CipherScript.wait = function (milliseconds) {
     var start = new Date().getTime();
     for (var i = 0; i < 1e7; i++) {
-      if ((new Date().getTime() - start) > milliseconds){
+      if ((new Date().getTime() - start) > milliseconds) {
         break;
       }
     }
@@ -60,6 +62,11 @@ if (CipherScript.on == true && CipherScript.off == false) {
       console.log("Error Code: 2;");
       console.log("Empty or Space at the front.");
     }
+    if (errorcode == 3) {
+      return "An error was detected. Cause: Blocked."
+      console.log("Error Code: 3;")
+      console.log("Blocked.")
+    }
   };
   CipherScript.booleancheck = function (check) {
     if (check) {
@@ -73,6 +80,65 @@ if (CipherScript.on == true && CipherScript.off == false) {
   };
   CipherScript.popup = function (text) {
     alert(text)
+  };
+  CipherScript.random = function (number) {
+    return Math.floor(Math.random() * number) + 1;
+  };
+  CipherScript.beforeunload = function () {
+    return "ERROR";
+    console.log("CipherScript.beforeunload: This is used for 'Are you sure you want to leave?'.")
+  };
+  CipherScript.enableroles = function (adminpassword, modpassword) {
+    if (CipherScript.htmlroles == false) {
+      if (adminpassword != "true" && modpassword != "true") {
+        CipherScript.htmlroles = true;
+        console.log("CipherScript.enableroles: Sucess!")
+        CipherScript.administrator = adminpassword;
+        CipherScript.moderator = modpassword;
+        console.log("Admin Password Set!: " + adminpassword)
+        console.log("Mod Password Set!: " + modpassword)
+      }
+      else {
+        console.log("CipherScript.htmlroles: 'true' cannot be the password!")
+      }
+    }
+    else if (CipherScript.htmlroles == true) {
+      console.log("CipherScript.htmlroles: Already set!")
+    }
+  };
+  CipherScript.adminrequired = function () {
+    if (CipherScript.htmlroles == true) {
+      alert("ADMINISTRATOR REQUIRED!")
+      var checkpassword = prompt("Password?:")
+      if (checkpassword == CipherScript.administrator) {
+        alert("Correct!")
+        CipherScript.administrator = true;
+      }
+      else {
+        alert("Incorrect!")
+        console.log("CipherScript.adminrequire: Wrong password!")
+      }
+    }
+    else if (CipherScript.htmlroles == false) {
+      console.log("CipherScript.htmlroles: Roles have not been set up!")
+    }
+  };
+  CipherScript.modrequired = function () {
+    if (CipherScript.htmlroles == true) {
+      alert("MODERATOR REQUIRED!")
+      var checkpassword = prompt("Password?:")
+      if (checkpassword == CipherScript.moderator) {
+        alert("Correct!")
+        CipherScript.moderator = true;
+      }
+      else {
+        alert("Incorrect!")
+        console.log("CipherScript.modrequire: Wrong password!")
+      }
+    }
+    else if (CipherScript.htmlroles == false) {
+      console.log("CipherScript.htmlroles: Roles have not been set up!")
+    }
   };
 
 }
