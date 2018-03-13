@@ -3,10 +3,10 @@
 #### CipherScript is a javascript extension which adds more readable data and more shortcuts to do certain things.
 
 #### How to install/add:
-
+```
 To install or add CipherScript, you need the most important file: 'setup.js'
 'setup.js' will set up CipherScript. To link CipherScript to your HTML files, just look inside 'example.html'.
-
+```
 #### setup.js
 
 'setup.js' is the setup process for CipherScript. It is the most important file to install out of all of them. For more information, check 'How to install/add:'.
@@ -17,7 +17,7 @@ To install or add CipherScript, you need the most important file: 'setup.js'
 
 #### Summary
 
-Here is a summary of what is above. 'console.html' + 'console.js' + 'default.css' is the console for CipherScript and to install CipherScript, download 'setup.js', then, link 'setup.js' with a HTML file (See 'example.html' for an example).s
+Here is a summary of what is above. 'console.html' + 'console.js' + 'default.css' is the console for CipherScript and to install CipherScript, download 'setup.js', then, link 'setup.js' with a HTML file (See 'example.html' for an example).
 
 #### List of new things:
 
