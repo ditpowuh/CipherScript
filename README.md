@@ -31,10 +31,18 @@ CipherScript.error();
 CipherScript.warn();
 CipherScript.message();
 CipherScript.post();
+CipherScript.popup();
+CipherScript.booleancheck();
+CipherScript.random();
+CipherScript.enableroles();
+CipherScript.adminrequired();
+CipherScript.modrequired();
+CipherScript.beforeunload();
 
 CipherScript.debug
 CipherScript.temporary
 CipherScript.fixmode
 CipherScript.testmode
+CipherScript.htmlroles
 ```
 #### I do not recommend editing 'setup.js' unless you know what you are doing!
