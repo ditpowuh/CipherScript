@@ -5,7 +5,8 @@
 #### How to install/add:
 ```
 To install or add CipherScript, you need the most important file: 'setup.js'
-'setup.js' will set up CipherScript. To link CipherScript to your HTML files, just look inside 'example.html'.
+'setup.js' will set up CipherScript. To link CipherScript to your HTML files, please take a look at
+'example.html' for an example.
 ```
 #### setup.js
 ```
