@@ -19,6 +19,7 @@ else {
 if (CipherScript.on == true && CipherScript.off == false) {
 
   CipherScript.htmlroles = false;
+
   CipherScript.debug = false;
   CipherScript.temporary = false;
   CipherScript.fixmode = false;
@@ -68,25 +69,64 @@ if (CipherScript.on == true && CipherScript.off == false) {
       console.log("Blocked.")
     }
   };
-  CipherScript.booleancheck = function (check) {
-    if (check) {
-      return true;
-      console.log("CipherScript.booleancheck: true")
-    }
-    else {
-      return false;
-      console.log("CipherScript.booleancheck: false")
-    }
+  CipherScript.findlength = function (string) {
+    return string.length;
   };
   CipherScript.popup = function (text) {
     alert(text)
   };
-  CipherScript.random = function (number) {
-    return Math.floor(Math.random() * number) + 1;
+  CipherScript.round = function (number) {
+    if (typeof number == "number") {
+      return Math.round(number);
+    }
+    else {
+      return "ERROR";
+    }
   };
+  CipherScript.random = function (number) {
+    if (typeof number == "number") {
+      return Math.floor(Math.random() * number) + 1;
+    }
+    else {
+      return "ERROR";
+    }
+  };
+  CipherScript.squareroot = function (number) {
+    if (typeof number == "number") {
+      return Math.sqrt(number);
+    }
+    else {
+      return "ERROR";
+    }
+  };
+  CipherScript.powers = function (number1, number2) {
+    if (typeof number1 == "number" && typeof number2 == "number") {
+      return Math.pow(number1, number2);
+    }
+    else {
+      return "ERROR";
+    }
+  }
   CipherScript.beforeunload = function () {
     return "ERROR";
     console.log("CipherScript.beforeunload: This is used for 'Are you sure you want to leave?'.")
+  };
+  CipherScript.checkstate = function (input) {
+    if (typeof input == "number") {
+      return "number";
+    }
+    else if (typeof input == "string") {
+      return "string";
+    }
+    else if (typeof input == "boolean") {
+      return "boolean";
+    }
+    else if (typeof input == "object") {
+      return "object";
+    }
+    else {
+      return "ERROR";
+    }
   };
   CipherScript.enableroles = function (adminpassword, modpassword) {
     if (CipherScript.htmlroles == false) {
@@ -135,6 +175,16 @@ if (CipherScript.on == true && CipherScript.off == false) {
         alert("Incorrect!")
         console.log("CipherScript.modrequire: Wrong password!")
       }
+    }
+    else if (CipherScript.htmlroles == false) {
+      console.log("CipherScript.htmlroles: Roles have not been set up!")
+    }
+  };
+  CipherScript.resetroles = function (adminpassword, modpassword) {
+    if (CipherScript.htmlroles == true) {
+      CipherScript.administrator == adminpassword;
+      CipherScript.moderator == modpassword;
+      console.log("CipherScript.htmlroles: Roles have been resetted!")
     }
     else if (CipherScript.htmlroles == false) {
       console.log("CipherScript.htmlroles: Roles have not been set up!")
