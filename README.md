@@ -33,12 +33,18 @@ CipherScript.warn();
 CipherScript.message();
 CipherScript.post();
 CipherScript.popup();
-CipherScript.booleancheck();
+CipherScript.checkstate();
 CipherScript.random();
 CipherScript.enableroles();
 CipherScript.adminrequired();
 CipherScript.modrequired();
+CipherScript.resetroles();
 CipherScript.beforeunload();
+CipherScript.powers();
+CipherScript.squareroot();
+CipherScript.random();
+CipherScript.round();
+CipherScript.findlength();
 
 CipherScript.debug
 CipherScript.temporary
