@@ -1,3 +1,7 @@
+/*
+Copyright © Ditpowuh 2018 Copyright Holder All Rights Reserved | All comments are from me
+*/
+
 var CipherScript = new Object();
 CipherScript.CipherScript = "ERROR";
 CipherScript.setup = true;
