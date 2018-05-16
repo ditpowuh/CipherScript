@@ -1,3 +1,7 @@
+/*
+Copyright © Ditpowuh 2018 Copyright Holder All Rights Reserved | All comments are from me
+*/
+
 CipherScript.popup(CipherScript.message("Loading Console..."))
 CipherScript.wait(1000)
 if (CipherScript.setup == true) {
