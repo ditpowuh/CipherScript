@@ -20,6 +20,11 @@ For more information, check 'How to install/add:'.
 That page is the console. 'console.js' is the script for the console.
 'default.css' is unnecessary and is just decoration for the console.
 ```
+#### File(s): #Testing [Folder]
+```
+The '#Testing' folder contains my testing for certain things. 
+'#Testing' is unnecessary; you do not have to download it. 
+```
 #### Summary
 ```
 Here is a summary of what is above. 'console.html' + 'console.js' + 'default.css' is the console
