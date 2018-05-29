@@ -1,16 +1,12 @@
-/*
-Copyright © Ditpowuh 2018 Copyright Holder All Rights Reserved | All comments are from me
-*/
-
 var CipherScript = new Object();
 CipherScript.CipherScript = "ERROR";
 CipherScript.setup = true;
 
-if (CipherScript.setup === true) {
+if (CipherScript.setup == true) {
   CipherScript.off = false;
   CipherScript.on = true;
 }
-else if (CipherScript.setup === false) {
+else if (CipherScript.setup == false) {
   CipherScript.off = true;
   CipherScript.on = false;
 }
@@ -20,7 +16,7 @@ else {
   CipherScript.on = "ERROR";
 }
 
-if (CipherScript.on === true && CipherScript.off === false) {
+if (CipherScript.on == true && CipherScript.off == false) {
 
   CipherScript.htmlroles = false;
 
@@ -31,8 +27,8 @@ if (CipherScript.on === true && CipherScript.off === false) {
   CipherScript.safemode = false;
 
   CipherScript.message = function (text) {
-    console.log(text);
     return (text);
+    console.log(text);
   };
   CipherScript.post = function (text) {
     console.log(text);
@@ -46,38 +42,38 @@ if (CipherScript.on === true && CipherScript.off === false) {
     }
   };
   CipherScript.warn = function (text) {
-    console.log("Warned.");
+    console.log("Warned.")
     alert("WARNING!");
     var warntext = confirm(text);
   };
   CipherScript.error = function (errorcode) {
-    console.log("ERROR DETECTED.");
-    if (errorcode === 0) {
+    console.log("ERROR DETECTED.")
+    if (errorcode == 0) {
+      return "An error was detected. Unknown cause.";
       console.log("Error Code: 0;");
       console.log("Unknown Cause.");
-      return "An error was detected. Unknown cause.";
     }
-    if (errorcode === 1) {
+    if (errorcode == 1) {
+      return "An error was detected. Cause: Setup Unsuccessful.";
       console.log("Error Code: 1;");
       console.log("Setup Unsuccessful.");
-      return "An error was detected. Cause: Setup Unsuccessful.";
     }
-    if (errorcode === 2) {
+    if (errorcode == 2) {
+      return "An error was detected. Cause: Empty or Space at front.";
       console.log("Error Code: 2;");
       console.log("Empty or Space at the front.");
-      return "An error was detected. Cause: Empty or Space at front.";
     }
-    if (errorcode === 3) {
-      console.log("Error Code: 3;");
-      console.log("Blocked.");
-      return "An error was detected. Cause: Blocked.";
+    if (errorcode == 3) {
+      return "An error was detected. Cause: Blocked."
+      console.log("Error Code: 3;")
+      console.log("Blocked.")
     }
   };
   CipherScript.findlength = function (string) {
     return string.length;
   };
   CipherScript.popup = function (text) {
-    alert(text);
+    alert(text)
   };
   CipherScript.round = function (number) {
     if (typeof number == "number") {
@@ -110,10 +106,10 @@ if (CipherScript.on === true && CipherScript.off === false) {
     else {
       return "ERROR";
     }
-  };
+  }
   CipherScript.beforeunload = function () {
-    console.log("CipherScript.beforeunload: This is used for 'Are you sure you want to leave?' prompt.");
     return "ERROR";
+    console.log("CipherScript.beforeunload: This is used for 'Are you sure you want to leave?'.")
   };
   CipherScript.checkstate = function (input) {
     if (typeof input == "number") {
@@ -133,7 +129,7 @@ if (CipherScript.on === true && CipherScript.off === false) {
     }
   };
   CipherScript.enableroles = function (adminpassword, modpassword) {
-    if (CipherScript.htmlroles === false) {
+    if (CipherScript.htmlroles == false) {
       if (adminpassword != "true" && modpassword != "true") {
         CipherScript.htmlroles = true;
         console.log("CipherScript.enableroles: Sucess!")
@@ -170,28 +166,28 @@ if (CipherScript.on === true && CipherScript.off === false) {
   CipherScript.modrequired = function () {
     if (CipherScript.htmlroles == true) {
       alert("MODERATOR REQUIRED!")
-      var checkpassword = prompt("Password?:");
+      var checkpassword = prompt("Password?:")
       if (checkpassword == CipherScript.moderator) {
         alert("Correct!")
         CipherScript.moderator = true;
       }
       else {
         alert("Incorrect!")
-        console.log("CipherScript.modrequire: Wrong password!");
+        console.log("CipherScript.modrequire: Wrong password!")
       }
     }
     else if (CipherScript.htmlroles == false) {
-      console.log("CipherScript.htmlroles: Roles have not been set up!");
+      console.log("CipherScript.htmlroles: Roles have not been set up!")
     }
   };
   CipherScript.resetroles = function (adminpassword, modpassword) {
     if (CipherScript.htmlroles == true) {
       CipherScript.administrator == adminpassword;
       CipherScript.moderator == modpassword;
-      console.log("CipherScript.htmlroles: Roles have been resetted!");
+      console.log("CipherScript.htmlroles: Roles have been resetted!")
     }
     else if (CipherScript.htmlroles == false) {
-      console.log("CipherScript.htmlroles: Roles have not been set up!");
+      console.log("CipherScript.htmlroles: Roles have not been set up!")
     }
   };
 
