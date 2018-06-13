@@ -25,6 +25,10 @@ That page is the console. 'console.js' is the script for the console.
 The '#Testing' folder contains my testing for certain things. 
 '#Testing' is unnecessary; you do not have to download it. 
 ```
+#### File(s): Other Files
+```
+Other files that are within this repository are unnecessary and are not required to be downloaded.
+```
 #### Summary
 ```
 Here is a summary of what is above. 'console.html' + 'console.js' + 'default.css' is the console
