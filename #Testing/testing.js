@@ -15,7 +15,7 @@ MainObject.function2 = function () {
   //Empty\\
 }
 
-alert("LINK TEST")
+alert("LINK TEST");
 
 /*
 Main Testing
