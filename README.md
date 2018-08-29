@@ -1,7 +1,8 @@
 # CipherScript
 
 #### CipherScript is a javascript extension which adds more readable data and more shortcuts to do certain things. CipherScript is hackable/editable and can be modified in many ways.
-#### CipherScript is very small (In size); the size of CipherScript is less than 1 MB. It is unrecommended to edit/change/hack the file 'setup.js' unless you know what you are doing.
+#### CipherScript is very small (In size); the size of CipherScript is less than 1 MB. It is not recommended to edit/change/hack the file 'setup.js' unless you know what you are doing.
+#### It is recommended that you have some experience with JavaScript when you use CipherScript. If you do not have any experience, you should learn about JavaScript first.
 
 #### How to install/add:
 ```
@@ -22,20 +23,20 @@ That page is the console. 'console.js' is the script for the console.
 ```
 #### File(s): #Testing [Folder]
 ```
-The '#Testing' folder contains my testing for certain things. 
-'#Testing' is unnecessary; you do not have to download it. 
+The '#Testing' folder contains my testing for certain things.
+'#Testing' is unnecessary; you do not have to download it.
 ```
 #### File(s): Other Files
 ```
-Other files that are within this repository are unnecessary and are not required to be downloaded.
+Some other files that are within this repository are unnecessary and are not required to be download, however, it may change your performance and quality. So, it is recommended that you download ALL files.
 ```
 #### Summary
 ```
 Here is a summary of what is above. 'console.html' + 'console.js' + 'default.css' is the console
 for CipherScript and to install CipherScript, download 'setup.js', then, link 'setup.js' with a HTML
-file (See 'example.html' for an example).
+file (See 'example.html' for an example). '#Testing' is a folder which contains my testing.
 ```
-#### List of new things:
+#### List of new methods/functions:
 ```
 CipherScript.wait();
 CipherScript.error();
@@ -55,11 +56,18 @@ CipherScript.squareroot();
 CipherScript.random();
 CipherScript.round();
 CipherScript.findlength();
-
+CipherScript.createfile();
+```
+#### List of new readable data:
+```
 CipherScript.debug
 CipherScript.temporary
 CipherScript.fixmode
 CipherScript.testmode
 CipherScript.htmlroles
+CipherScript.console
+CipherScript.moderator
+CipherScript.administrator
 ```
+
 #### Copyright © Ditpowuh 2018 Copyright Holder All Rights Reserved
