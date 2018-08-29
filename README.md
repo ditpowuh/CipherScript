@@ -4,6 +4,9 @@
 #### CipherScript is very small (In size); the size of CipherScript is less than 1 MB. It is not recommended to edit/change/hack the file 'setup.js' unless you know what you are doing.
 #### It is recommended that you have some experience with JavaScript when you use CipherScript. If you do not have any experience, you should learn about JavaScript first.
 
+### Regular (JS To HTML)
+#### The following files will be found in the folder: 'Regular'.
+
 #### How to install/add:
 ```
 To install or add CipherScript, you need the most important file: 'setup.js'
@@ -36,6 +39,23 @@ Here is a summary of what is above. 'console.html' + 'console.js' + 'default.css
 for CipherScript and to install CipherScript, download 'setup.js', then, link 'setup.js' with a HTML
 file (See 'example.html' for an example). '#Testing' is a folder which contains my testing.
 ```
+
+### Node.JS Module
+#### The following can be installed via Node.JS.
+
+#### How to install/add:
+```
+To install, please just install Node.JS. If you do not know what Node.JS or how to use it,
+please head to: https://nodejs.org/.
+```
+```javascript
+const CipherScript = require("CipherScript");
+
+CipherScript.post("Hello world!");
+```
+
+### New Things Added To JavaScript when using CipherScript
+
 #### List of new methods/functions:
 ```
 CipherScript.wait();
@@ -70,4 +90,4 @@ CipherScript.moderator
 CipherScript.administrator
 ```
 
-#### Copyright © Ditpowuh 2018 Copyright Holder All Rights Reserved
+### Copyright © Ditpowuh 2018 Copyright Holder All Rights Reserved
