@@ -31,7 +31,8 @@ The '#Testing' folder contains my testing for certain things.
 ```
 #### File(s): Other Files
 ```
-Some other files that are within this repository are unnecessary and are not required to be download, however, it may change your performance and quality. So, it is recommended that you download ALL files.
+Some other files that are within this repository are unnecessary and are not required to be download,
+however, it may change your performance and quality. So, it is recommended that you download ALL files.
 ```
 #### Summary
 ```
@@ -46,7 +47,7 @@ file (See 'example.html' for an example). '#Testing' is a folder which contains 
 #### How to install/add:
 ```
 To install, please just install Node.JS. If you do not know what Node.JS or how to use it,
-please head to: https://nodejs.org/.
+please head to: https://nodejs.org/. Here is an example of to install it.
 ```
 ```javascript
 const CipherScript = require("CipherScript");
