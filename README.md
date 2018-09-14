@@ -40,23 +40,6 @@ Here is a summary of what is above. 'console.html' + 'console.js' + 'default.css
 for CipherScript and to install CipherScript, download 'setup.js', then, link 'setup.js' with a HTML
 file (See 'example.html' for an example). '#Testing' is a folder which contains my testing.
 ```
-
-### Node.JS Module
-#### The following can be installed via Node.JS.
-
-#### How to install/add:
-```
-To install, please just install Node.JS. If you do not know what Node.JS or how to use it,
-please head to: https://nodejs.org/. Here is an example of to install it.
-```
-```javascript
-const CipherScript = require("CipherScript");
-
-CipherScript.post("Hello world!");
-```
-
-### New Things Added To JavaScript when using CipherScript
-
 #### List of new methods/functions:
 ```
 CipherScript.wait();
@@ -89,6 +72,44 @@ CipherScript.htmlroles
 CipherScript.console
 CipherScript.moderator
 CipherScript.administrator
+```
+
+### Node.JS Module
+#### The following can be installed via Node.JS.
+
+#### How to install/add:
+```
+To install, please just install Node.JS. If you do not know what Node.JS or how to use it,
+please head to: https://nodejs.org/. Here is an example of to install it.
+```
+```javascript
+const CipherScript = require("CipherScript");
+
+CipherScript.post("Hello world!");
+```
+#### List of new methods/functions:
+```
+CipherScript.wait();
+CipherScript.error();
+CipherScript.warn();
+CipherScript.message();
+CipherScript.post();
+CipherScript.popup();
+CipherScript.checkstate();
+CipherScript.random();
+CipherScript.beforeunload();
+CipherScript.powers();
+CipherScript.squareroot();
+CipherScript.random();
+CipherScript.round();
+CipherScript.findlength();
+```
+#### List of new readable data:
+```
+CipherScript.debug
+CipherScript.temporary
+CipherScript.fixmode
+CipherScript.testmode
 ```
 
 ### Copyright © Ditpowuh 2018 Copyright Holder All Rights Reserved
