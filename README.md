@@ -1,10 +1,10 @@
 # CipherScript
 
-#### CipherScript is a javascript extension which adds more readable data and more shortcuts to do certain things. CipherScript is hackable/editable and can be modified in many ways.
-#### CipherScript is very small (In size); the size of CipherScript is less than 1 MB. It is not recommended to edit/change/hack the file 'setup.js' unless you know what you are doing.
-#### It is recommended that you have some experience with JavaScript when you use CipherScript. If you do not have any experience, you should learn about JavaScript first.
+#### CipherScript is a javascript extension which adds more readable data and more shortcuts to do certain things. CipherScript is hackable/editable and can be modified in many ways (when you are using it for HTML).
+#### CipherScript is very small (in size); the size of CipherScript is less than 1 MB. It is not recommended to edit/change/hack the file 'setup.js' unless you know what you are doing.
+#### It is recommended that you have some experience with JavaScript when you use CipherScript. If you do not have any experience, you should definitely learn about JavaScript first.
 
-### Regular (JS To HTML)
+### Regular (Link JS File To HTML File)
 #### The following files will be found in the folder: 'Regular'.
 
 #### How to install/add:
