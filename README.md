@@ -74,7 +74,7 @@ CipherScript.moderator
 CipherScript.administrator
 ```
 
-### Node.JS Module
+### Node.JS Module [NOT AVAILABLE AT THE MOMENT]
 #### The following can be installed via Node.JS.
 
 #### How to install/add:
