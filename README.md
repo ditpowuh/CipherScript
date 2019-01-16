@@ -80,11 +80,14 @@ CipherScript.administrator
 #### How to install/add:
 ```
 To install, please just install Node.JS. If you do not know what Node.JS or how to use it,
-please head to: https://nodejs.org/. Here is an example of to install it.
+please head to: https://nodejs.org/. Install the module first and then insert it into a JS file.
+Here is an example.
 ```
 ```javascript
-const CipherScript = require("CipherScript");
+//Put this at the start of the JS file after installation of CipherScript.
+const CipherScript = require("CipherScript"); 
 
+//Now you can use CipherScript!
 CipherScript.post("Hello world!");
 ```
 #### List of new methods/functions:
