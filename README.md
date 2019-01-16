@@ -41,7 +41,7 @@ for CipherScript and to install CipherScript, download 'setup.js', then, link 's
 file (See 'example.html' for an example). '#Testing' is a folder which contains my testing.
 ```
 #### List of new methods/functions:
-```
+```javascript
 CipherScript.wait();
 CipherScript.error();
 CipherScript.warn();
@@ -63,7 +63,7 @@ CipherScript.findlength();
 CipherScript.createfile();
 ```
 #### List of new readable data:
-```
+```javascript
 CipherScript.debug
 CipherScript.temporary
 CipherScript.fixmode
@@ -91,7 +91,7 @@ const CipherScript = require("CipherScript");
 CipherScript.post("Hello world!");
 ```
 #### List of new methods/functions:
-```
+```javascript
 CipherScript.wait();
 CipherScript.error();
 CipherScript.warn();
@@ -108,7 +108,7 @@ CipherScript.round();
 CipherScript.findlength();
 ```
 #### List of new readable data:
-```
+```javascript
 CipherScript.debug
 CipherScript.temporary
 CipherScript.fixmode
