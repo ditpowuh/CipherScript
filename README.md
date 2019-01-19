@@ -115,4 +115,4 @@ CipherScript.fixmode
 CipherScript.testmode
 ```
 
-### Copyright © Ditpowuh 2018 Copyright Holder All Rights Reserved
+### Copyright © Ditpowuh 2019 Copyright Holder All Rights Reserved
