@@ -31,19 +31,19 @@ if (CipherScript.on === true && CipherScript.off === false) {
   CipherScript.testmode = false;
   CipherScript.safemode = false;
 
-  CipherScript.message = function (text) {
+  CipherScript.message = function(text) {
     if (CipherScript.console === true) {
       console.log(text);
     }
     return (text);
   };
-  CipherScript.post = function (text) {
+  CipherScript.post = function(text) {
     if (CipherScript.console === false) {
       console.log("Exception!: CipherScript.post can log on console without any interruptions.");
     }
     console.log(text);
   };
-  CipherScript.wait = function (milliseconds) {
+  CipherScript.wait = function(milliseconds) {
     var start = new Date().getTime();
     for (var i = 0; i < 1e7; i++) {
       if ((new Date().getTime() - start) > milliseconds) {
@@ -51,14 +51,14 @@ if (CipherScript.on === true && CipherScript.off === false) {
       }
     }
   };
-  CipherScript.warn = function (text) {
+  CipherScript.warn = function(text) {
     if (CipherScript.console === true) {
       console.log("Warned.");
     }
     alert("WARNING!");
     var warntext = confirm(text);
   };
-  CipherScript.error = function (errorcode, popup) {
+  CipherScript.error = function(errorcode, popup) {
     if (CipherScript.console === false) {
       console.log("Exception!: CipherScript.error can log on console without any interruptions.");
     }
@@ -92,13 +92,13 @@ if (CipherScript.on === true && CipherScript.off === false) {
       }
     }
   };
-  CipherScript.findlength = function (string) {
+  CipherScript.findlength = function(string) {
     return string.length;
   };
-  CipherScript.popup = function (text) {
+  CipherScript.popup = function(text) {
     alert(text);
   };
-  CipherScript.round = function (number) {
+  CipherScript.round = function(number) {
     if (typeof number == "number") {
       return Math.round(number);
     }
@@ -106,7 +106,7 @@ if (CipherScript.on === true && CipherScript.off === false) {
       return "ERROR";
     }
   };
-  CipherScript.random = function (number) {
+  CipherScript.random = function(number) {
     if (typeof number == "number") {
       return Math.floor(Math.random() * number) + 1;
     }
@@ -114,7 +114,7 @@ if (CipherScript.on === true && CipherScript.off === false) {
       return "ERROR";
     }
   };
-  CipherScript.squareroot = function (number) {
+  CipherScript.squareroot = function(number) {
     if (typeof number == "number") {
       return Math.sqrt(number);
     }
@@ -122,7 +122,7 @@ if (CipherScript.on === true && CipherScript.off === false) {
       return "ERROR";
     }
   };
-  CipherScript.powers = function (number1, number2) {
+  CipherScript.powers = function(number1, number2) {
     if (typeof number1 == "number" && typeof number2 == "number") {
       return Math.pow(number1, number2);
     }
@@ -130,14 +130,14 @@ if (CipherScript.on === true && CipherScript.off === false) {
       return "ERROR";
     }
   };
-  CipherScript.beforeunload = function () {
+  CipherScript.beforeunload = function() {
     if (CipherScript.console === false) {
       console.log("Exception!: CipherScript.beforeunload can log on console without any interruptions.");
     }
     console.log("CipherScript.beforeunload: This is used for 'Are you sure you want to leave?' prompt.");
     return "ERROR";
   };
-  CipherScript.checkstate = function (input) {
+  CipherScript.checkstate = function(input) {
     if (typeof input == "number") {
       return "number";
     }
@@ -154,7 +154,7 @@ if (CipherScript.on === true && CipherScript.off === false) {
       return "ERROR";
     }
   };
-  CipherScript.enableroles = function (adminpassword, modpassword) {
+  CipherScript.enableroles = function(adminpassword, modpassword) {
     if (CipherScript.htmlroles === false) {
       CipherScript.htmlroles = true;
       if (CipherScript.console === true) {
@@ -173,7 +173,7 @@ if (CipherScript.on === true && CipherScript.off === false) {
       }
     }
   };
-  CipherScript.adminrequired = function () {
+  CipherScript.adminrequired = function() {
     if (CipherScript.htmlroles === true) {
       alert("ADMINISTRATOR REQUIRED!")
       var checkpassword = prompt("Password?:")
@@ -194,7 +194,7 @@ if (CipherScript.on === true && CipherScript.off === false) {
       }
     }
   };
-  CipherScript.modrequired = function () {
+  CipherScript.modrequired = function() {
     if (CipherScript.htmlroles === true) {
       alert("MODERATOR REQUIRED!");
       var checkpassword = prompt("Password?:");
@@ -215,7 +215,7 @@ if (CipherScript.on === true && CipherScript.off === false) {
       }
     }
   };
-  CipherScript.resetroles = function (adminpassword, modpassword) {
+  CipherScript.resetroles = function(adminpassword, modpassword) {
     if (CipherScript.htmlroles === true) {
       CipherScript.administrator = adminpassword;
       CipherScript.moderator = modpassword;
@@ -229,7 +229,7 @@ if (CipherScript.on === true && CipherScript.off === false) {
       }
     }
   };
-  CipherScript.createfile = function (title, text) {
+  CipherScript.createfile = function(title, text) {
     var element = document.createElement("a");
     element.setAttribute("href", "data:text/plain;charset=utf-8," + encodeURIComponent(text));
     element.setAttribute("download", title);

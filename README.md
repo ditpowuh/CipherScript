@@ -1,10 +1,10 @@
 # CipherScript
 
-#### CipherScript is a javascript extension which adds more readable data and more shortcuts to do certain things. CipherScript is hackable/editable and can be modified in many ways.
-#### CipherScript is very small (In size); the size of CipherScript is less than 1 MB. It is not recommended to edit/change/hack the file 'setup.js' unless you know what you are doing.
-#### It is recommended that you have some experience with JavaScript when you use CipherScript. If you do not have any experience, you should learn about JavaScript first.
+#### CipherScript is a javascript extension which adds more readable data and more shortcuts to do certain things. CipherScript is hackable/editable and can be modified in many ways (when you are using it for HTML).
+#### CipherScript is very small (in size); the size of CipherScript is less than 1 MB. It is not recommended to edit/change/hack the file 'setup.js' unless you know what you are doing.
+#### It is recommended that you have some experience with JavaScript when you use CipherScript. If you do not have any experience, you should definitely learn about JavaScript first.
 
-### Regular (JS To HTML)
+### Regular (Link JS File To HTML File)
 #### The following files will be found in the folder: 'Regular'.
 
 #### How to install/add:
@@ -40,25 +40,8 @@ Here is a summary of what is above. 'console.html' + 'console.js' + 'default.css
 for CipherScript and to install CipherScript, download 'setup.js', then, link 'setup.js' with a HTML
 file (See 'example.html' for an example). '#Testing' is a folder which contains my testing.
 ```
-
-### Node.JS Module
-#### The following can be installed via Node.JS.
-
-#### How to install/add:
-```
-To install, please just install Node.JS. If you do not know what Node.JS or how to use it,
-please head to: https://nodejs.org/. Here is an example of to install it.
-```
-```javascript
-const CipherScript = require("CipherScript");
-
-CipherScript.post("Hello world!");
-```
-
-### New Things Added To JavaScript when using CipherScript
-
 #### List of new methods/functions:
-```
+```javascript
 CipherScript.wait();
 CipherScript.error();
 CipherScript.warn();
@@ -80,7 +63,7 @@ CipherScript.findlength();
 CipherScript.createfile();
 ```
 #### List of new readable data:
-```
+```javascript
 CipherScript.debug
 CipherScript.temporary
 CipherScript.fixmode
@@ -91,4 +74,45 @@ CipherScript.moderator
 CipherScript.administrator
 ```
 
-### Copyright © Ditpowuh 2018 Copyright Holder All Rights Reserved
+### Node.JS Module [NOT AVAILABLE AT THE MOMENT]
+#### The following can be installed via Node.JS.
+
+#### How to install/add:
+```
+To install, please just install Node.JS. If you do not know what Node.JS or how to use it,
+please head to: https://nodejs.org/. Install the module first and then insert it into a JS file.
+Here is an example.
+```
+```javascript
+//Put this at the start of the JS file after installation of CipherScript.
+const CipherScript = require("CipherScript"); 
+
+//Now you can use CipherScript!
+CipherScript.post("Hello world!");
+```
+#### List of new methods/functions:
+```javascript
+CipherScript.wait();
+CipherScript.error();
+CipherScript.warn();
+CipherScript.message();
+CipherScript.post();
+CipherScript.popup();
+CipherScript.checkstate();
+CipherScript.random();
+CipherScript.beforeunload();
+CipherScript.powers();
+CipherScript.squareroot();
+CipherScript.random();
+CipherScript.round();
+CipherScript.findlength();
+```
+#### List of new readable data:
+```javascript
+CipherScript.debug
+CipherScript.temporary
+CipherScript.fixmode
+CipherScript.testmode
+```
+
+### Copyright © Ditpowuh 2019 Copyright Holder All Rights Reserved
