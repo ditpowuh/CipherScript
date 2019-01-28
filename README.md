@@ -61,6 +61,7 @@ CipherScript.random();
 CipherScript.round();
 CipherScript.findlength();
 CipherScript.createfile();
+CipherScript.var();
 ```
 #### List of new readable data:
 ```javascript
@@ -106,6 +107,7 @@ CipherScript.squareroot();
 CipherScript.random();
 CipherScript.round();
 CipherScript.findlength();
+CipherScript.var();
 ```
 #### List of new readable data:
 ```javascript
