@@ -5,7 +5,6 @@ module.exports = {
   off: false,
   on: true,
   csconsole: true,
-  htmlroles: false,
 
   message: function(text) {
     console.log(text);
@@ -117,5 +116,13 @@ module.exports = {
       return "ERROR";
     }
   },
+  var: function(input1, input2) {
+    if (!input1 && !input2) {
+      return "ERROR";
+    }
+    else {
+      eval(input1 + " = \"" + input2 + "\"");
+    }
+  }
 
 };
