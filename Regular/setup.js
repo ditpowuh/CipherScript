@@ -249,5 +249,26 @@ if (CipherScript.on === true && CipherScript.off === false) {
       eval(input1 + " = \"" + input2 + "\"");
     }
   };
+  CipherScript.createdata = function(input1, input2) {
+    if (!input1 && !input2) {
+      return "ERROR";
+    }
+    else {
+      eval('CipherScript' + '.' + input1 + ' = ' + input2);
+    }
+  };
+  CipherScript.run = function(input) {
+    if (!input) {
+      return "ERROR";
+    }
+    else {
+      try {
+        eval(input);
+      }
+      catch (e) {
+        return "ERROR" + ":" + " " + e;
+      }
+    }
+  };
 
 }
