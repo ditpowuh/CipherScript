@@ -108,6 +108,8 @@ CipherScript.random();
 CipherScript.round();
 CipherScript.findlength();
 CipherScript.var();
+CipherScript.createdata();
+CipherScript.run();
 ```
 #### List of new readable data:
 ```javascript
