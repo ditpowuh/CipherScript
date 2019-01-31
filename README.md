@@ -62,6 +62,8 @@ CipherScript.round();
 CipherScript.findlength();
 CipherScript.createfile();
 CipherScript.var();
+CipherScript.createdata();
+CipherScript.run();
 ```
 #### List of new readable data:
 ```javascript
