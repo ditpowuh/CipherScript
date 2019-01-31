@@ -32,6 +32,8 @@ if (CipherScript.console === true) {
           break;
         }
 
+        CipherScript.run(consoletext);
+        
         if (consoletext == "CipherScript.CipherScript") {
           CipherScript.popup(CipherScript.message("ERROR"));
           CipherScript.error(3, true);
