@@ -238,7 +238,7 @@ if (CipherScript.on === true && CipherScript.off === false) {
     element.click();
     document.body.removeChild(element);
     if (CipherScript.console === true) {
-      console.log("Created and Downloaded file: " + title);
+      console.log("Created and Downloaded file:" + " " + title);
     }
   };
   CipherScript.var = function(input1, input2) {
@@ -254,7 +254,7 @@ if (CipherScript.on === true && CipherScript.off === false) {
       return "ERROR";
     }
     else {
-      eval('CipherScript' + '.' + input1 + ' = ' + input2);
+      eval("CipherScript" + "." + input1 + " = " + input2);
     }
   };
   CipherScript.run = function(input) {
