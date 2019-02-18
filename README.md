@@ -96,7 +96,7 @@ const CipherScript = require("CipherScript");
 //Now you can use CipherScript!
 CipherScript.post("Hello world!");
 ```
-```
+```javascript
 /*Method 2*/
 
 //Put this at the start of the JS file with the 'setup.js' in the folder.
