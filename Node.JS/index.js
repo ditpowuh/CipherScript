@@ -120,16 +120,46 @@ module.exports = {
     if (!input1 && !input2) {
       return "ERROR";
     }
-    else {
+    else if (input1 != "string") {
+      return "ERROR";
+    }
+    if (typeof input2 == "number") {
+      eval(input1 + " = " + input2);
+    }
+    else if (typeof input2 == "string") {
       eval(input1 + " = \"" + input2 + "\"");
+    }
+    else if (typeof input2 == "boolean") {
+      eval(input1 + " = " + input2);
+    }
+    else if (typeof input2 == "object") {
+      eval(input1 + " = " + input2);
+    }
+    else {
+      return "ERROR";
     }
   },
   createdata: function(input1, input2) {
     if (!input1 && !input2) {
       return "ERROR";
     }
+    else if (input1 != "string") {
+      return "ERROR";
+    }
+    if (typeof input2 == "number") {
+      eval("CipherScript" + "." + input1 + " = " + input2);
+    }
+    else if (typeof input2 == "string") {
+      eval("CipherScript" + "." + input1 + " = \"" + input2 + "\"");
+    }
+    else if (typeof input2 == "boolean") {
+      eval("CipherScript" + "." + input1 + " = " + input2);
+    }
+    else if (typeof input2 == "object") {
+      eval("CipherScript" + "." + input1 + " = " + input2);
+    }
     else {
-      eval('CipherScript' + '.' + input + ' = ' + input2);
+      return "ERROR";
     }
   },
   run: function(input) {
@@ -141,7 +171,7 @@ module.exports = {
         eval(input);
       }
       catch (e) {
-        return "ERROR" + ":" + " " + e;
+        return "ERROR" + " " + "(" + e + ")";
       }
     }
   }
